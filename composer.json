@@ -1,0 +1,23 @@
+{
+    "name": "code-green-creative/spinner",
+    "description": "",
+    "authors": [
+        {
+            "name": "Code Green Creative, LLC",
+            "email": "jesse@codegreencreative.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "CodeGreenCreative\\Spinner": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
