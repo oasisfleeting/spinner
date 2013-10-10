@@ -45,7 +45,7 @@ class Spinner
     protected $content = null;
 
     // By default we want to show a specific spin on a per page basis
-    protected $seed_page_name = true;
+    protected $seed_page_name = false;
 
     // Opening character starting a separated list of words
     protected $opening_construct = '{';
@@ -55,6 +55,14 @@ class Spinner
 
     // Word separator character
     protected $separator = '|';
+
+    /**
+     * Tell script to use a specific version of a spin
+     */
+    public function setSeedPageName()
+    {
+        $this->seed_page_name = true;
+    }
 
     /**
      * Set the content to be spun
