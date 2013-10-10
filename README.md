@@ -20,6 +20,10 @@ Then add to the aliases array the following:
 You should then be good to go and be able to access the spinner using the following static interface:
 
 ```php
+// Optional seeding of a page to maintain content integrity for that page
+// This means only one version will show for a specific page
+Spinner::setSeedPageName();
+
 // Set your content
 Spinner::setContent('{color|size} is your {shirt|hat}');
 
