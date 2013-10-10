@@ -17,3 +17,12 @@ Then add to the aliases array the following:
 'Spinner' => 'CodeGreenCreative\Spinner\Facade',
 ```
 
+You should then be good to go and be able to access the spinner using the following static interface:
+
+```php
+// Set your content
+Spinner::setContent('{color|size} is your {shirt|hat}');
+
+// Return spun content
+return Spinner::spin();
+```
